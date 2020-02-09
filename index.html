@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quick Forms</title>
+</head>
+<body>
+	<div id="bckGrad"></div>
+	<div id="quickForm">
+    	<div title="Home">
+        	<!-- Enter Page HTML elements for page 1 here... -->
+        </div>
+        <div title="Getting Started">
+        	<!-- Enter Page HTML elements for page 2 here... -->
+        </div>
+        <div title="Downloads">
+        	<!-- Enter Page HTML elements for page 3 here... -->
+        </div>
+        <div title="Plugin Options">
+        	<!-- Enter Page HTML elements for page 4 here... -->
+        </div>
+        <div title="Extras">
+        	<!-- Enter Page HTML elements for page 5 here... -->
+        </div>
+    </div>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.1.custom.min.js"></script>
+<script type="text/javascript" src="js/quickform.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		// QuickForms plugin -->
+		$('#quickForm').quickForm({
+			formTitle: '<img src="images/QFLogo.png" alt="logo" id="myLogo" />',
+			pageWidth: '900px',
+			footerType: 'desc',
+			menuNav: true,
+			submitYN: false,
+			autoHeight: true,
+			radioYesTxt: 'No',
+			radioNoTxt: 'Yes'
+		});
+		
+		// This is not needed for QuickForms to work and is only to make the above easy to read (AJAXing page data) -->
+		$.get('ajax/home.html', function(data){
+            console.log($(data).find('#content').html());
+			$('#quickForm div:nth-child(2)').html($(data).find('#content').html());
+		});
+		$.get('ajax/getStarted.html', function(data){
+			$('#quickForm div:nth-child(3)').html($(data).find('#content').html());
+		});
+		$.get('ajax/downloads.html', function(data){
+			$('#quickForm div:nth-child(4)').html($(data).find('#content').html());
+		});
+		$.get('ajax/pluginOptions.html', function(data){
+			$('#quickForm div:nth-child(5)').html($(data).find('#content').html());
+		});
+		$.get('ajax/extras.html', function(data){
+			$('#quickForm div:nth-child(6)').html($(data).find('#content').html());
+			// Note the use of the "recall" method here this is so the extra show/hide function operates properly...
+			$('#quickForm').quickForm('recall');
+		});
+	});
+</script>
+</body>
+</html>

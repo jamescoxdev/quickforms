@@ -1,0 +1,87 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>QuickForms Getting Started</title>
+</head>
+<body>
+	<div>
+		<div id="content">
+        	<h1>1: Include JS files</h1>
+    		<p>You must include both jQuery and jQuery UI files first and then include the QuickForm.js file after. It is better to load these files at the end of your page just before the closing body tag like this:</p>
+			<pre>
+<code>
+<span class="mainTags">&lt;!DOCTYPE html&gt;</span>
+<span class="mainTags">&lt;html&gt;</span>
+<span class="mainTags">&lt;head&gt;</span>
+    <span class="mainTags">&lt;title&gt;Quick Forms&lt;/title&gt;</span>
+<span class="mainTags">&lt;/head&gt;</span>
+<span class="mainTags">&lt;body&gt;</span>
+    <span class="mainTags">&lt;div id="quickForms"&gt;</span>
+        <span class="commentTags">&lt;!-- Quick Form pages to go here --></span>
+    <span class="mainTags">&lt;/div&gt;</span>
+    <span class="mainTags">&lt;script <span class="attrTags">type=</span><span class="quoteTags">"text/javascript"</span> <span class="attrTags">src=</span><span class="quoteTags">"js/jquery-1.9.1.min.js"</span>&gt;&lt;/script&gt;</span>
+    <span class="mainTags">&lt;script <span class="attrTags">type=</span><span class="quoteTags">"text/javascript"</span> <span class="attrTags">src=</span><span class="quoteTags">"js/jquery-ui-1.10.1.custom.min.js"</span>&gt;&lt;/script&gt;</span>
+    <span class="mainTags">&lt;script <span class="attrTags">type=</span><span class="quoteTags">"text/javascript"</span> <span class="attrTags">src=</span><span class="quoteTags">"js/quickform.js"</span>&gt;&lt;/script&gt;</span>
+<span class="mainTags">&lt;/body&gt;</span>
+<span class="mainTags">&lt;/html&gt;</span>
+</code>
+			</pre>
+            <h1>2: Create your markup</h1>
+            <p>Next you need to create the markup to hold your pages. You can have as many pages as you want! Also note that if you want to have custom menu names then add a title attribute like this:</p>
+            <pre>
+<code>
+<span class="mainTags">&lt;body&gt;</span>
+    <span class="mainTags">&lt;div <span class="attrTags">id=</span><span class="quoteTags">"quickForms"</span>&gt;</span>
+        <span class="mainTags">&lt;div <span class="attrTags">title=</span><span class="quoteTags">"My Custom Title 1"</span>&gt;</span>
+            <span class="commentTags">&lt;!-- Page Content for page 1 here --></span>
+        <span class="mainTags">&lt;/div&gt;</span>
+        <span class="mainTags">&lt;div <span class="attrTags">title=</span><span class="quoteTags">"My Custom Title 2"</span>&gt;</span>
+            <span class="commentTags">&lt;!-- Page Content for page 2 here --></span>
+        <span class="mainTags">&lt;/div&gt;</span>
+        <span class="mainTags">&lt;div <span class="attrTags">title=</span><span class="quoteTags">"My Custom Title 3"</span>&gt;</span>
+            <span class="commentTags">&lt;!-- Page Content for page 3 here --></span>
+        <span class="mainTags">&lt;/div&gt;</span>
+        <span class="commentTags">&lt;!-- As many pages as you want... --&gt;</span>
+    <span class="mainTags">&lt;/div&gt;</span>
+    <span class="mainTags">&lt;script <span class="attrTags">type=</span><span class="quoteTags">"text/javascript"</span> <span class="attrTags">src=</span><span class="quoteTags">"js/jquery-1.9.1.min.js"</span>&gt;&lt;/script&gt;</span>
+    <span class="mainTags">&lt;script <span class="attrTags">type=</span><span class="quoteTags">"text/javascript"</span> <span class="attrTags">src=</span><span class="quoteTags">"js/jquery-ui-1.10.1.custom.min.js"</span>&gt;&lt;/script&gt;</span>
+    <span class="mainTags">&lt;script <span class="attrTags">type=</span><span class="quoteTags">"text/javascript"</span> <span class="attrTags">src=</span><span class="quoteTags">"js/quickform.js"</span>&gt;&lt;/script&gt;</span>
+<span class="mainTags">&lt;/body&gt;</span>
+</code>
+            </pre>
+            <h1>3: Call QuickForms plugin</h1>
+            <p>After you have created your pages (and filled them with your content...), you then need to call the plugin. This is best to be done once jQuery and QuickForms files have loaded like this:</p>
+            <pre>
+<code>
+<span class="mainTags">&lt;body&gt;</span>
+    <span class="mainTags">&lt;div <span class="attrTags">id=</span><span class="quoteTags">"quickForms"</span>&gt;</span>
+        <span class="commentTags">&lt;!-- QuickForms pages here --></span>
+    <span class="mainTags">&lt;/div&gt;</span>
+    <span class="mainTags">&lt;script <span class="attrTags">type=</span><span class="quoteTags">"text/javascript"</span> <span class="attrTags">src=</span><span class="quoteTags">"js/jquery-1.9.1.min.js"</span>&gt;&lt;/script&gt;</span>
+    <span class="mainTags">&lt;script <span class="attrTags">type=</span><span class="quoteTags">"text/javascript"</span> <span class="attrTags">src=</span><span class="quoteTags">"js/jquery-ui-1.10.1.custom.min.js"</span>&gt;&lt;/script&gt;</span>
+    <span class="mainTags">&lt;script <span class="attrTags">type=</span><span class="quoteTags">"text/javascript"</span> <span class="attrTags">src=</span><span class="quoteTags">"js/quickform.js"</span>&gt;&lt;/script&gt;</span>
+    <span class="mainTags">&lt;script <span class="attrTags">type=</span><span class="quoteTags">"text/javascript"</span>&gt;</span>
+        <span class="codeTags1">$</span><span class="mainTags">(</span><span class="codeTags2">document</span><span class="mainTags">).ready(</span><span class="codeTags2">function</span><span class="mainTags">(){</span>
+            <span class="codeTags1">$</span><span class="mainTags">('#quickForms').</span><span class="codeTags2">quickForm</span><span class="mainTags">();</span>
+        <span class="mainTags">});</span>
+    <span class="mainTags">&lt;/script&gt;</span>
+<span class="mainTags">&lt;/body&gt;</span>
+</code>
+            </pre>
+            <h1>4: Customise plugin and CSS</h1>
+            <p>The final step is to customise Quick Forms by using the plugin options and CSS. Quickform.js automatically loads a CSS file which can be found in the CSS directory in the <a href="?page=Downloads">Source Download</a>, this CSS file has everything setup for you ready to go, or you can change it to suit your needs or use your own custom CSS file. Here is an example for using a plugin option to load your own CSS file:</p>
+            <pre>
+<code>
+<span class="mainTags">&lt;script <span class="attrTags">type=</span><span class="quoteTags">"text/javascript"</span>&gt;</span>
+    <span class="codeTags1">$</span><span class="mainTags">(</span><span class="codeTags2">document</span><span class="mainTags">).ready(</span><span class="codeTags2">function</span><span class="mainTags">(){</span>
+        <span class="codeTags1">$</span><span class="mainTags">('#quickForms').</span><span class="codeTags2">quickForm</span><span class="mainTags">({</span>
+            <span class="attrTags">desktopCSS:</span> <span class="quoteTags">"path/to/your/styles.css"</span>
+        <span class="mainTags">});</span>
+    <span class="mainTags">});</span>
+<span class="mainTags">&lt;/script&gt;</span>
+</code>
+            </pre>
+        </div>
+    </div>
+</body>
+</html>

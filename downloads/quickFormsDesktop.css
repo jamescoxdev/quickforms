@@ -1,0 +1,31 @@
+#QFTitle {  } /* This is used for styling the Title area */
+#QFTitle h1 {  } /* This is used for styling the Title text */
+#QFNav {  } /* This is used for styling the Navigation area */
+#QFNav li {  } /* This is used for styling the Navigation elements */
+#QFbreadcrumbs {  } /* This is used if you are using the breadcrumbs plugin option */
+.menuActive {  } /*  This is used to display the current page in the nav menu  */
+.QFPage {  } /* This is used for styling the main pages */
+.QFPage h1 {  } /* This is used for styling the main pages header text */
+.QFPage p {  } /* This is used for styling the main pages text */
+.QFPage a {  } /* This is used for styling the main pages anchor text */
+.QFPage input[type=text] {  } /* This is used for form element styling */
+.QFPage input[type=text]:focus {  } /* This is used for form element styling */
+.QFPage input[type=radio] {  } /* This is used for form element styling */
+.QFPage input[type=radio]:focus {  } /* This is used for form element styling */
+.QFPage input[type=checkbox] {  } /* This is used for form element styling */
+.QFPage input[type=checkbox]:focus {  } /* This is used for form element styling */
+.QFPage select {  } /* This is used for form element styling */
+.QFPage select:focus {  } /* This is used for form element styling */
+.QFPage textarea {  } /* This is used for form element styling */
+.QFPage textarea:focus {  } /* This is used for form element styling */
+#QFPrev {  } /* This is used if you are using the footer section */
+#QFNext {  } /* This is used if you are using the footer section */
+#QFSubmit {  } /* This is used if you are using the footer section */
+.QFvalidateError {  } /* This is used if you are using the field validation */
+.reportTable td:first-child {  } /* This is used if you are using the Reports plugin option */
+.reportTable h1 {  } /* This is used if you are using the Reports plugin option */
+.QFPrint {  } /* This is used if you are using the Print plugin option */
+.QFsubPageRadio {  } /* This is used if you are using the Sub page function */
+#QFButtons {  } /* This is used for the Buttons/Footer section */
+#QFButtons p {  } /* This is used if you are using the Footer Description option */
+#QFButtons a {  } /* This is used if you are using the Footer Description option */

@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>QuickForms Home</title>
+</head>
+<body>
+	<div>
+		<div id="content">
+        	<h1>What is it?</h1>
+    		<p>QuickForms is a project created for ease and speed of setting up online multi-paged web forms and webpages. You can now use it to create quick and simple web pages, sliders, online forms with many customisable options and is also mobile aware!</p>
+    		<br />
+            <h1>Features</h1>
+            <ul class="indent">
+            	<li><p>Quick simple setup</p></li>
+                <li><p>Pages can contain any html element</p></li>
+                <li><p>More than 30 options for easy customisation</p></li>
+                <li><p>Mobile ready</p></li>
+                <li><p>Built in Simple Field Validation</p></li>
+                <li><p>Customise for Web Page or Online Form</p></li>
+                <li><p>Auto Run feature for cycling page content automatically</p></li>
+            </ul>
+            <br />
+            <h1>Examples</h1>
+            <p>The best example is this site! Check out this sites <span class="anchor" onClick="openSource()">source code</span>, or click <a href="?page=Downloads">here</a> to download the source content. Check out the <a href="?page=GettingStarted">Getting Started</a> section for how to start and use QuickForms.</p>
+        	<script type="text/javascript">
+				function openSource(){;
+					var source = "<html>";
+					source += document.getElementsByTagName('html')[0].innerHTML;
+					source += "</html>";
+					source = source.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+					source = "<pre>"+source+"</pre>";
+					sourceWindow = window.open('','Source of page','height=800,width=800,scrollbars=1,resizable=1');
+					sourceWindow.document.write(source);
+					sourceWindow.document.close();
+					if(window.focus) sourceWindow.focus();
+				}
+			</script>
+        </div>
+    </div>
+</body>
+</html>

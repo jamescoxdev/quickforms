@@ -1,0 +1,31 @@
+* { margin: 0px; padding: 0px; font-family: Arial, Helvetica, Sans-Serif; }
+table { width: 100%; border-collapse: collapse; }
+#quickForm { top: 50px; }
+#QFTitle { border-left: 5px solid #db8c1e; padding-left: 20px; }
+#QFTitle h1 { color: #db8c1e; cursor: default; }
+#QFNav li { list-style: none; font-size: 12px; color: #666; cursor: default; }
+#QFNav li:hover { color: #db8c1e; }
+#QFbreadcrumbs { font-size: 12px; color: #666; cursor: default; }
+.menuActive { font-weight: 600; font-size: 14px; color: #444 !important; }
+.QFPage { border-left: 5px solid #bbb; padding-left: 20px; color: #333; margin-top: 20px; }
+.QFPage input[type=text] { outline: 0px; border: 1px solid #aaa; height: 25px; margin-bottom: 10px; width: 280px; padding: 0px 10px; }
+.QFPage input:focus { outline: 0px; border: 1px solid #db8c1e; }
+.QFPage input[type=radio] { margin: 0px 5px; }
+.QFPage input[type=checkbox] { margin: 0px 5px; }
+.QFPage select { outline: 0px; border: 1px solid #aaa; height: 35px; margin-bottom: 10px; width: 370px; line-height: 35px; }
+.QFPage select:focus { outline: 0px; border: 1px solid #db8c1e; }
+.QFPage textarea { outline: 0px; border: 1px solid #aaa; height: 290px; margin-bottom: 10px; width: 495px; padding: 5px 10px; }
+.QFPage textarea:focus { outline: 0px; border: 1px solid #db8c1e; }
+.QFPage table tr { height: 35px; }
+#QFPrev { cursor: pointer; text-align: right; font-weight: 600; color: #db8c1e; font-size: 30px; height: 60px; width: 190px; line-height: 58px; background-image: url(../images/arrowBack_orange.png); background-repeat: no-repeat; background-position: 0px 0px; }
+#QFNext { cursor: pointer; font-weight: 600; color: #db8c1e; font-size: 30px; height: 60px; width: 140px; line-height: 58px; background-image: url(../images/arrow_orange.png); background-repeat: no-repeat; background-position: 80px 0px; }
+#QFSubmit { cursor: pointer; font-weight: 600; color: #db8c1e; font-size: 30px; height: 60px; width: 140px; line-height: 58px; background-image: url(../images/arrowUp_orange.png); background-repeat: no-repeat; background-position: 80px 0px; }
+.textArea { width: 530px; height: 290px; padding: 5px 10px; }
+.textArea:focus { outline: 0px; border: 1px solid #00b6ff; }
+.QFvalidateError { border-color: #f00 !important; }
+.reportTable td:first-child { width: 30%; }
+.reportTable h1 { font-size: 18px; margin: 20px 0px 10px; }
+.QFPrint { border: 1px solid #db8c1e; padding: 5px 15px; cursor: pointer; margin-top: -45px; color: #db8c1e; font-size: 18px; }
+.QFPrint:hover { background-color: #db8c1e; color: #fff !important; }
+.buttonCreate { width: 190px; background-image: url(asset.gif); background-position: 150px 0px; margin-right: 30px; cursor: pointer; font-weight: 600; color: #00b6ff; font-size: 24px; height: 40px; line-height: 38px; background-repeat: no-repeat; }
+.buttonTime { width: 220px; background-image: url(booking.gif); background-position: 180px 0px; cursor: pointer; font-weight: 600; color: #00b6ff; font-size: 24px; height: 40px; line-height: 38px; background-repeat: no-repeat; }

@@ -1,0 +1,109 @@
+* { margin: 0px; padding: 0px; }
+html { height: 100%; }
+body { height: 100%; font-family: Segoe UI, Helvetica, Arial, Sans-Serif; background-color: #3399CC; background-image: url(../images/bck.jpg); background-repeat: repeat; }
+@font-face { font-family: 'SegoeUINormal'; src: url('../fonts/segoeui-webfont.eot'); src: url('../fonts/segoeui-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/segoeui-webfont.woff') format('woff'), url('../fonts/segoeui-webfont.ttf') format('truetype'), url('../fonts/segoeui-webfont.svgz#SegoeUINormal') format('svg'); font-weight: normal; font-style: normal; }
+#quickForm { min-height: 100%; }
+#bckGrad { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.3)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+#QFTitle { height: 100px; }
+#QFTitle h1 { float: left; text-align: center; color: #f90; text-shadow: 0px -1px 2px #000, 0px 1px 2px #fff; letter-spacing: 2px; margin: 20px 0px; }
+#QFNav { overflow: hidden; height: 40px; margin: 25px 0px; float: right; border-radius: 8px; box-shadow: inset 0px 1px 1px rgba(255,255,255,0.8), 0px 1px 1px #000;
+	background: #4f99b8; /* Old browsers */
+	background: -moz-linear-gradient(top,  #4f99b8 0%, #174f6f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4f99b8), color-stop(100%,#174f6f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4f99b8 0%,#174f6f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4f99b8 0%,#174f6f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4f99b8 0%,#174f6f 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #4f99b8 0%,#174f6f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f99b8', endColorstr='#174f6f',GradientType=0 ); /* IE6-9 */
+}
+#QFNav li { list-style: none; float: left; padding: 10px 15px; margin-top: 1px; height: 19px; line-height: 19px; letter-spacing: 1.5px; color: #fff; text-shadow: 0px -1px 1px #000; border-left: 1px solid rgba(0,0,0,0.5); border-right: 1px solid rgba(255,255,255,0.3); }
+#QFNav li:first-child { border-left: 0px !important; }
+#QFNav li:last-child { border-right: 0px !important; }
+#QFNav li:hover {  }
+#QFbreadcrumbs { margin-bottom: 30px; } /* This is used if you are using the breadcrumbs plugin option */
+.menuActive { background: #174f6f; /* Old browsers */
+	background: -moz-linear-gradient(top,  #174f6f 0%, #4f99b8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#174f6f), color-stop(100%,#4f99b8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #174f6f 0%,#4f99b8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #174f6f 0%,#4f99b8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #174f6f 0%,#4f99b8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #174f6f 0%,#4f99b8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#174f6f', endColorstr='#4f99b8',GradientType=0 ); /* IE6-9 */} /*  This is used to display the current page in the nav menu  */
+
+.QFPage { color: #fff; text-shadow: 0px -1px 1px #000; border-radius: 8px; box-shadow: inset 0px 1px 1px rgba(255,255,255,0.8), 0px 1px 1px #000; padding: 20px; width: 860px !important;
+	background: #4f99b8; /* Old browsers */
+	background: -moz-linear-gradient(top,  #4f99b8 0%, #174f6f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4f99b8), color-stop(100%,#174f6f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4f99b8 0%,#174f6f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4f99b8 0%,#174f6f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4f99b8 0%,#174f6f 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #4f99b8 0%,#174f6f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f99b8', endColorstr='#174f6f',GradientType=0 ); /* IE6-9 */
+	bottom: 80px; position: relative; margin-top: 80px;
+}
+.QFPage h1 { color: #F90; cursor: default; }
+.QFPage p { font-size: 18px; letter-spacing: 1.5px; text-align: justify; cursor: default; }
+.QFPage a { color: #f90; cursor: pointer !important; text-decoration: none; }
+.QFPage a:hover { text-decoration: underline; }
+.QFPage input[type=text] {  } /* This is used for form element styling */
+.QFPage input[type=text]:focus {  } /* This is used for form element styling */
+.QFPage input[type=radio] {  } /* This is used for form element styling */
+.QFPage input[type=radio]:focus {  } /* This is used for form element styling */
+.QFPage input[type=checkbox] {  } /* This is used for form element styling */
+.QFPage input[type=checkbox]:focus {  } /* This is used for form element styling */
+.QFPage select {  } /* This is used for form element styling */
+.QFPage select:focus {  } /* This is used for form element styling */
+.QFPage textarea {  } /* This is used for form element styling */
+.QFPage textarea:focus {  } /* This is used for form element styling */
+#QFPrev {  } /* This is used if you are using the footer section */
+#QFNext {  } /* This is used if you are using the footer section */
+#QFSubmit {  } /* This is used if you are using the footer section */
+.QFvalidateError {  } /* This is used if you are using the field validation */
+.reportTable td:first-child {  } /* This is used if you are using the Reports plugin option */
+.reportTable h1 {  } /* This is used if you are using the Reports plugin option */
+.QFPrint {  } /* This is used if you are using the Print plugin option */
+.QFsubPageRadio { margin: 0px 5px; } /* This is used if you are using the Sub page function */
+#QFButtons { position: absolute; bottom: 0px; }
+#QFButtons p { color: #fff; text-shadow: 0px -1px 1px #000; font-size: 16px; letter-spacing: 1.5px; text-align: right; cursor: default; } /* This is used if you are using the Footer Description option */
+#QFButtons a { color: #f90; cursor: pointer !important; text-decoration: none; } /* This is used if you are using the Footer Description option */
+#QFButtons a:hover { text-decoration: underline; } /* This is used if you are using the Footer Description option */
+
+/* Below is CSS not related to the QuickForms plugin, but for page presentation... */
+.indent { margin-left: 40px; }
+.anchor { color: #f90; cursor: pointer !important; text-decoration: none; }
+.anchor:hover { text-decoration: underline; }
+pre { background-color: #fff; padding: 0px 20px; margin: 20px 60px; border: 2px solid #F90; }
+code { font-family: "Courier New", Courier, monospace !important; color: #444 !important; font-size: 14px; text-shadow: none; }
+.mainTags { color: navy; }
+.quoteTags { color: #D14; }
+.commentTags { color: #998; }
+.attrTags { color: teal; }
+.codeTags1 { color: #000; }
+.codeTags2 { color: #C0F; }
+#downloadTable { width: 100%; margin-top: -20px; }
+#downloadTable tr td { height: 35px; }
+#downloadTable tr td:first-child { width: 400px; }
+.tab30 { margin-left: 30px; font-size: 15px !important; }
+#downloadTable a { font-size: 15px !important; }
+.downloadTitle { margin-top: 50px; }
+#optionsTable { width: 100%; margin: 20px 0px; border-collapse: collapse; border: 1px solid ##f90; }
+#optionsTable tr:first-child { background-color: #f90; }
+#optionsTable th { height: 30px; text-shadow: none; border: 1px solid #fc6; }
+#optionsTable tr th:first-child { width: 150px; }
+#optionsTable tr th:nth-child(2) { width: 120px; }
+#optionsTable td { height: 25px; background-color: #fff; text-shadow: none; color: #444; padding: 10px; border: 1px solid #fc6; }
+#methodsTable { width: 100%; margin: 20px 0px; border-collapse: collapse; border: 1px solid ##f90; }
+#methodsTable tr:first-child { background-color: #f90; }
+#methodsTable th { height: 30px; text-shadow: none; border: 1px solid #fc6; }
+#methodsTable tr th:first-child { width: 150px; }
+#methodsTable td { height: 25px; background-color: #fff; text-shadow: none; color: #444; padding: 10px; border: 1px solid #fc6; }
+.highlight { color: #f90 !important; }
+label { font-size: 18px; letter-spacing: 1.5px; text-align: justify; cursor: default; }

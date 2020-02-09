@@ -1,0 +1,144 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>QuickForms Home</title>
+</head>
+
+<body>
+	<div>
+		<div id="content">
+    		<h1>Available Options</h1>
+            <table id="optionsTable">
+            	<thead>
+                    <tr>
+                        <th>Option</th><th>Default Value</th><th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>header</td><td>true</td><td>Set to true to enable the header content (this includes the title, navigation or breadcrumbs)</td>
+                    </tr>
+                    <tr>
+                        <td>formTitle</td><td>'myForm'</td><td>Enter in your text to display a title in the head section (optionally you can also insert an img by using the &lt;img /&gt; tag if you wish to use a logo)</td>
+                    </tr>
+                    <tr>
+                        <td>pageMenu</td><td>true</td><td>Set to true to enable the page menu/breadcrumbs in the page header</td>
+                    </tr>
+                    <tr>
+                        <td>nextTxt</td><td>'Next'</td><td>Enter in your text for the Next Button</td>
+                    </tr>
+                    <tr>
+                        <td>prevTxt</td><td>'Previous'</td><td>Enter in your text for the Previous/Back Button</td>
+                    </tr>
+                    <tr>
+                        <td>submitTxt</td><td>'Submit'</td><td>Enter in your text for the Submit/Save Button</td>
+                    </tr>
+                    <tr>
+                        <td>navTxt</td><td>'Page'</td><td>This is the default text for the page menu navigation. To have a custom entry for each page simply append the title="" attribute to your div's</td>
+                    </tr>
+                    <tr>
+                        <td>pageWidth</td><td>'700px'</td><td>Default page width. Note this can be any standard css measurement</td>
+                    </tr>
+                    <tr>
+                        <td>pageHeight</td><td>'400px'</td><td>Default page height. Note this can be any standard css measurement. This is used for a static height for all pages and must also be set if autoHeight is set to true</td>
+                    </tr>
+                    <tr>
+                        <td>FXSpeed</td><td>500</td><td>The speed of the effect transition between pages</td>
+                    </tr>
+                    <tr>
+                        <td>submitForm</td><td>'thisForm'</td><td>Select an ID of a form to submit. This is usefull if you have multiple forms you are working with and wish to have a specific form submited. 'thisForm' submits the form that the plugin is attached to</td>
+                    </tr>
+                    <tr>
+                        <td>breadcrumb</td><td>false</td><td>Set to true to change the menu navigation into breadcrumbs in the header</td>
+                    </tr>
+                    <tr>
+                        <td>breadcrumbTxt</td><td>'Page'</td><td>Set the text of the breadcrumbs</td>
+                    </tr>
+                    <tr>
+                        <td>submitYN</td><td>true</td><td>Set to false if you don't want to have a submit button shown in the footer section (this will disable the ability to submit the form unless you use the submit method)</td>
+                    </tr>
+                    <tr>
+                        <td>radioYesTxt</td><td>'Yes'</td><td>Set the text of the 'Yes' Radio option (See <a href="?page=Extras">Extras</a> for how the radio options work</td>
+                    </tr>
+                    <tr>
+                        <td>radioNoTxt</td><td>'No'</td><td>Set the text of the 'No' Radio option (See <a href="?page=Extras">Extras</a> for how the radio options work</td>
+                    </tr>
+                    <tr>
+                        <td>autoHeight</td><td>false</td><td>Set to true for each page to adjust it's height according to it's content</td>
+                    </tr>
+                    <tr>
+                        <td>footer</td><td>true</td><td>Set to true to enable the footer section</td>
+                    </tr>
+                    <tr>
+                        <td>footerType</td><td>'nav'</td><td>Set to 'nav' to display the navigation buttons in the footer, or set to 'desc' to display a descriptive footer. See footerContent option to set the content of the footer if using the 'desc' option</td>
+                    </tr>
+                    <tr>
+                        <td>footerContent</td><td>'&lt;p&gt;QuickForms by &lt;a href="www.infinight.net.au"&gt;Infinight&lt;/a&gt;&lt;/p&gt;'</td><td>Use this option to set the footer content if footerType option is set to 'desc'</td>
+                    </tr>
+                    <tr>
+                        <td>menuNav</td><td>false</td><td>Set to true to enable the menu with navigation. By default the menu is a guide for your users to know what page they are up to</td>
+                    </tr>
+                    <tr>
+                        <td>report</td><td>false</td><td>Set to true if you wish to generate a report at the end of the form</td>
+                    </tr>
+                    <tr>
+                        <td>reportSectioned</td><td>false</td><td>Set to true if you wish to have your report sectioned with headings based on your pages and page titles</td>
+                    </tr>
+                    <tr>
+                        <td>reportPrint</td><td>false</td><td>Set to true if you wish to enable the print button</td>
+                    </tr>
+                    <tr>
+                        <td>reportPrintTxt</td><td>'Print'</td><td>Set the text for the print button</td>
+                    </tr>
+                    <tr>
+                        <td>reportNavTxt</td><td>'Report'</td><td>Set the text to appear in the navigation on the header for the report page</td>
+                    </tr>
+                    <tr>
+                        <td>mobilePageW</td><td>'100%'</td><td>Set the width of the page for mobile devices</td>
+                    </tr>
+                    <tr>
+                        <td>mobilePageH</td><td>''</td><td>Set the height of the page for mobile devices</td>
+                    </tr>
+                    <tr>
+                        <td>mobileCSS</td><td>'css/quickFormsMobile.css'</td><td>Set the location of the Mobile CSS file (this is in relation to the page the plugin is called from)<br /><br /><i>Note that currently iPad's and Google Android Tablets are bundled under "Mobile" devices, this will be looked at in a future release for tighter configuration</i></td>
+                    </tr>
+                    <tr>
+                        <td>desktopCSS</td><td>'css/quickFormsDesktop.css'</td><td>Set the location of the Desktop CSS file (this is in relation to the page the plugin is called from)</td>
+                    </tr>
+                    <tr>
+                        <td>autoRun</td><td>false</td><td>Set to true to have each page automatically change like a content scroller</td>
+                    </tr>
+                    <tr>
+                        <td>autoRunDelay</td><td>3000</td><td>Set the time in mili-seconds for the delay between the pages when autoRun is set to true</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h1>Public Methods</h1>
+            <table id="methodsTable">
+            	<thead>
+                	<tr>
+                    	<th>Method</th><th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                	<tr>
+                    	<td>$('#quickForms').quickForm('next')</td><td>Use this method to call quickforms next command. Use this if you want an alternative button than the footer button</td>
+                    </tr>
+                    <tr>
+                    	<td>$('#quickForms').quickForm('prev')</td><td>Use this method to call quickforms previous command. Use this if you want an alternative button than the footer button</td>
+                    </tr>
+                    <tr>
+                    	<td>$('#quickForms').quickForm('submit')</td><td>Use this method to call quickforms submit command. Use this if you want an alternative button than the footer button</td>
+                    </tr>
+                    <tr>
+                    	<td>$('#quickForms').quickForm('print')</td><td>Use this method to call the quickforms print command. Use this if you want an alternative button to the print button in the report section</td>
+                    </tr>
+                    <tr>
+                    	<td>$('#quickForms').quickForm('recall')</td><td>Use this method to call the quickforms recall command. Use this if you generate page content via AJAX</td>
+                    </tr>
+                </tbody>
+            </table>
+    	</div>
+    </div>
+</body>
+</html>

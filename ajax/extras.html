@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>QuickForms Home</title>
+</head>
+
+<body>
+	<div>
+		<div id="content">
+        	<h1>Simple Field Validation</h1>
+    		<p>QuickForms has an extremly simple field validation to test if the field is empty. Simply asign your field the class <span class="highlight">'QFvalidate'</span> and quickforms will prevent the next function from proceding until the field has been filled in. The field will flash and have a red border until the field has focus again.</p>
+    		<br />
+            <h1>Show/Hide based on Form element Answer</h1>
+            <p>If you have a question (or section of questions) that are only required if your users say "yes..." then you can use this built in function. To use simply create another div on one of your pages and assign the class <span class="highlight">'QFsubPage'</span>. Next assign this div the <span class="highlight">'Title'</span> attribute and use your question as the title. Finally put your "hidden" questions or information inside this sub-div.</p>
+            <p>For example:</p>
+        	<pre>
+<code>
+<span class="mainTags">&lt;!DOCTYPE html&gt;</span>
+<span class="mainTags">&lt;html&gt;</span>
+<span class="mainTags">&lt;head&gt;</span>
+    <span class="mainTags">&lt;title&gt;Quick Forms&lt;/title&gt;</span>
+<span class="mainTags">&lt;/head&gt;</span>
+<span class="mainTags">&lt;body&gt;</span>
+    <span class="mainTags">&lt;div id="quickForms"&gt;
+        &lt;div&gt;
+            &lt;div class="QFsubPage" title="Is this question valid?"&gt;
+            	&lt;p&gt;Content that only applies if the above is valid&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div&gt;</span>
+            <span class="commentTags">&lt;!--Page 2 content here...--&gt;</span>
+        <span class="mainTags">&lt;/div&gt;
+    &lt;/div&gt;</span>
+    <span class="mainTags">&lt;script <span class="attrTags">type=</span><span class="quoteTags">"text/javascript"</span> <span class="attrTags">src=</span><span class="quoteTags">"js/jquery-1.9.1.min.js"</span>&gt;&lt;/script&gt;</span>
+    <span class="mainTags">&lt;script <span class="attrTags">type=</span><span class="quoteTags">"text/javascript"</span> <span class="attrTags">src=</span><span class="quoteTags">"js/jquery-ui-1.10.1.custom.min.js"</span>&gt;&lt;/script&gt;</span>
+    <span class="mainTags">&lt;script <span class="attrTags">type=</span><span class="quoteTags">"text/javascript"</span> <span class="attrTags">src=</span><span class="quoteTags">"js/quickform.js"</span>&gt;&lt;/script&gt;</span>
+    <span class="mainTags">&lt;script <span class="attrTags">type=</span><span class="quoteTags">"text/javascript"</span>&gt;</span>
+        <span class="codeTags1">$</span><span class="mainTags">(</span><span class="codeTags2">document</span><span class="mainTags">).ready(</span><span class="codeTags2">function</span><span class="mainTags">(){</span>
+            <span class="codeTags1">$</span><span class="mainTags">('#quickForms').</span><span class="codeTags2">quickForm</span><span class="mainTags">();</span>
+        <span class="mainTags">});</span>
+    <span class="mainTags">&lt;/script&gt;</span>
+<span class="mainTags">&lt;/body&gt;</span>
+<span class="mainTags">&lt;/html&gt;</span>
+</code>
+			</pre>
+            <p>This will then produce something like this:</p>
+            <br />
+            <div class="QFsubPage" title="Is this question valid?">
+            	<p>Content that only applies if the above is valid</p>
+            </div>
+            <h1>Logo in the title</h1>
+            <p>If you want to have a logo on your page/form instead of a text header then place a standard <span class="highlight">&lt;img /&gt;</span> tag in the formTitle option like this:</p>
+            <pre>
+<code>
+<span class="mainTags">&lt;script <span class="attrTags">type=</span><span class="quoteTags">"text/javascript"</span>&gt;</span>
+    <span class="codeTags1">$</span><span class="mainTags">(</span><span class="codeTags2">document</span><span class="mainTags">).ready(</span><span class="codeTags2">function</span><span class="mainTags">(){</span>
+        <span class="codeTags1">$</span><span class="mainTags">('#quickForms').</span><span class="codeTags2">quickForm</span><span class="mainTags">({</span>
+            <span class="attrTags">formTitle:</span> <span class="quoteTags">"&lt;img src='path/to/image.jpg' alt='logo' /&gt;"</span>
+        <span class="mainTags">});</span>
+    <span class="mainTags">});</span>
+<span class="mainTags">&lt;/script&gt;</span>
+</code>
+            </pre>
+        </div>
+    </div>
+</body>
+</html>

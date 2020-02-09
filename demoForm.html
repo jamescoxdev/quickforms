@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quick Forms</title>
+</head>
+<body>
+	<form method="post" action="">
+        <div id="quickForm">
+            <div title="Personal Questions">
+                <table>
+                	<tr>
+                    	<td><label for="firstName">First Name:</label></td><td><input type="text" class="firstName QFvalidate"/></td>
+                    </tr>
+                    <tr>
+                    	<td><label for="lastName">Last Name:</label></td><td><input type="text" class="lastName QFvalidate"/></td>
+                    </tr>
+                    <tr>
+                    	<td><label for="age">Age:</label></td><td><input type="text" class="age"/></td>
+                    </tr>
+                </table>
+            </div>
+            <div title="Random Questions">
+                <table>
+                	<tr>
+                    	<td><label for="color">Choose a Color:</label></td><td><select class="color"><option>red</option><option>blue</option><option>green</option></select></td>
+                    </tr>
+                    <tr>
+                    	<td><label for="restaurant">Select a Restaurant(s):</label></td><td><input type="checkbox" class="restaurant" value="kfc">KFC<br /><input type="checkbox" class="restaurant" value="McDonalds">McDonalds<br /><input type="checkbox" class="restaurant" value="Pizza Hut">Pizza Hut</td>
+                    </tr>
+                    <tr>
+                    	<td><label for="cars">Choose a Car Make:</label></td><td><input type="radio" class="cars" value="Holden" name="cars"/>Holden<br /><input type="radio" class="cars" value="Ford" name="cars"/>Ford</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </form>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.1.custom.min.js"></script>
+<script type="text/javascript" src="js/quickform.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#quickForm').quickForm({
+			formTitle: 'Demo Form',
+			pageWidth: '800px',
+			autoHeight: true,
+			radioYesTxt: 'No',
+			radioNoTxt: 'Yes',
+			nextTxt: 'Next',
+			prevTxt: 'Previous',
+			submitTxt: 'Save',
+			report: true,
+			reportSectioned: true,
+			reportPrint: true,
+			desktopCSS: 'css/quickForms_Form.css',
+			pageHeight: '150px'
+		});
+	});
+</script>
+</body>
+</html>
